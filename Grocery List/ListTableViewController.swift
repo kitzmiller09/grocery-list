@@ -80,6 +80,14 @@ class ListTableViewController: UIViewController, UITableViewDataSource, UITableV
 
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil) //Removes Text From Back Button
         
+        let myActivity = NSUserActivity(activityType: "Andrew.Grocery-List")
+        myActivity.title = "Handful"
+        myActivity.keywords = Set(arrayLiteral: "Handful", "Groceries", "Grocery List", "List")
+        self.userActivity = myActivity
+        myActivity.eligibleForHandoff = false
+        myActivity.becomeCurrent()
+        
+        
 //        addButton.configureButtonWithHightlightedShadowAndZoom(true)
     }
     
