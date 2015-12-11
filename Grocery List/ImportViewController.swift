@@ -17,15 +17,17 @@ class ImportViewController: UIViewController {
     
     @IBAction func submitList(sender: AnyObject) {
         
-//        UIView.animateWithDuration(0.2 ,
-//            animations: {
-//                self.importSubmit.transform = CGAffineTransformMakeScale(0.9, 0.9)
-//            },
-//            completion: { finish in
-//                UIView.animateWithDuration(0.1){
-//                    self.importSubmit.transform = CGAffineTransformIdentity
-//                }
-//        })
+        importSubmit.transform = CGAffineTransformMakeScale(0.7, 0.7)
+        
+        UIView.animateWithDuration(2.0 ,
+            delay: 0,
+            usingSpringWithDamping: 0.25,
+            initialSpringVelocity:  6.00,
+            options: UIViewAnimationOptions.AllowUserInteraction,
+            animations: {
+                self.importSubmit.transform = CGAffineTransformIdentity
+            }, completion: nil)
+            
 
         if !pasteField.text.isEmpty{
             let listText = pasteField.text
@@ -51,7 +53,7 @@ class ImportViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
-        importSubmit.configureButtonWithHightlightedShadowAndZoom(true)
+        //importSubmit.configureButtonWithHightlightedShadowAndZoom(true)
         
     }
     
