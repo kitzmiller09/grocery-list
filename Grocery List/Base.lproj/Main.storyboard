@@ -237,15 +237,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm6-aM-Jdc">
-                                <rect key="frame" x="40" y="373" width="240" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ueS-YV-0lx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-jT-Wx8">
                                 <rect key="frame" x="40" y="72" width="240" height="149"/>
                                 <color key="backgroundColor" white="0.96403556030000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,21 +265,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OdY-jT-Wx8" firstAttribute="top" secondItem="ZVt-0t-fL8" secondAttribute="bottom" constant="8" symbolic="YES" id="Xwm-Aj-O8U"/>
-                            <constraint firstItem="n5g-FW-0lG" firstAttribute="top" secondItem="OdY-jT-Wx8" secondAttribute="bottom" constant="109" id="Yrp-h2-SjF"/>
+                            <constraint firstItem="n5g-FW-0lG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OdY-jT-Wx8" secondAttribute="bottom" constant="10" id="Yrp-h2-SjF"/>
                             <constraint firstItem="OdY-jT-Wx8" firstAttribute="centerX" secondItem="2tA-gE-7DO" secondAttribute="centerX" id="eGq-F7-6it"/>
-                            <constraint firstItem="OdY-jT-Wx8" firstAttribute="trailing" secondItem="fm6-aM-Jdc" secondAttribute="trailing" id="fvm-Xk-63S"/>
                             <constraint firstItem="n5g-FW-0lG" firstAttribute="centerX" secondItem="OdY-jT-Wx8" secondAttribute="centerX" id="ikR-NY-I4z"/>
-                            <constraint firstItem="fm6-aM-Jdc" firstAttribute="top" secondItem="n5g-FW-0lG" secondAttribute="bottom" constant="13" id="jMO-iO-bEV"/>
                             <constraint firstItem="OdY-jT-Wx8" firstAttribute="leading" secondItem="2tA-gE-7DO" secondAttribute="leadingMargin" constant="24" id="mM8-Ku-UNL"/>
-                            <constraint firstItem="fm6-aM-Jdc" firstAttribute="leading" secondItem="OdY-jT-Wx8" secondAttribute="leading" id="nKX-f9-qg8"/>
+                            <constraint firstItem="n7t-nw-Tzx" firstAttribute="top" secondItem="n5g-FW-0lG" secondAttribute="bottom" priority="950" constant="120" id="nyH-8y-XCh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Items" id="NSx-CI-8Ym"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="errorLabel" destination="fm6-aM-Jdc" id="Cp5-Ow-XEc"/>
                         <outlet property="importSubmit" destination="n5g-FW-0lG" id="4Pq-nQ-Ntt"/>
                         <outlet property="pasteField" destination="OdY-jT-Wx8" id="mCo-eH-CWt"/>
+                        <outlet property="submitBottomLayoutConstraint" destination="nyH-8y-XCh" id="JrH-9p-bLR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-OB-bZE" userLabel="First Responder" sceneMemberID="firstResponder"/>

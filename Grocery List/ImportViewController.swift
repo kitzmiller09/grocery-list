@@ -11,9 +11,10 @@ import CoreData
 
 class ImportViewController: UIViewController {
     
+    @IBOutlet weak var submitBottomLayoutConstraint: NSLayoutConstraint!
     @IBOutlet weak var pasteField: UITextView!
     @IBOutlet weak var importSubmit: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
+    //@IBOutlet weak var errorLabel: UILabel!
     
     @IBAction func submitList(sender: AnyObject) {
         
@@ -42,7 +43,7 @@ class ImportViewController: UIViewController {
             pasteField.text = ""    //Clears the text from the textview
             
         } else{
-            errorLabel.text = "Please enter a list of items, one per line"
+            //errorLabel.text = "Please enter a list of items, one per line"
         }
     }
     
@@ -53,8 +54,33 @@ class ImportViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: "handleKeyboardHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        
         //importSubmit.configureButtonWithHightlightedShadowAndZoom(true)
         
+    }
+    
+    func handleKeyboardNotification(notification: NSNotification){
+        let userInfo = notification.userInfo!
+        
+        let keyboardFrame: CGRect = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                self.submitBottomLayoutConstraint.constant = keyboardFrame.size.height + 10
+            })
+    }
+    
+    func handleKeyboardHideNotification(notification: NSNotification){
+        let userInfo = notification.userInfo!
+        
+        let keyboardFrame: CGRect = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.submitBottomLayoutConstraint.constant = 120
+        })
     }
     
     override func didReceiveMemoryWarning() {
