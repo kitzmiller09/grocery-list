@@ -238,14 +238,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-jT-Wx8">
-                                <rect key="frame" x="40" y="72" width="240" height="149"/>
+                                <rect key="frame" x="40" y="72" width="240" height="229"/>
                                 <color key="backgroundColor" white="0.96403556030000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="229" id="aGy-IV-Gvo"/>
                                     <constraint firstAttribute="width" priority="250" constant="240" id="oWM-P6-xET"/>
                                     <constraint firstAttribute="height" priority="250" constant="149" id="zo1-ZA-hyt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zo1-ZA-hyt"/>
+                                    </mask>
+                                </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-FW-0lG">
                                 <rect key="frame" x="119" y="330" width="82" height="30"/>
@@ -271,6 +277,11 @@
                             <constraint firstItem="OdY-jT-Wx8" firstAttribute="leading" secondItem="2tA-gE-7DO" secondAttribute="leadingMargin" constant="24" id="mM8-Ku-UNL"/>
                             <constraint firstItem="n7t-nw-Tzx" firstAttribute="top" secondItem="n5g-FW-0lG" secondAttribute="bottom" priority="950" constant="120" id="nyH-8y-XCh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mM8-Ku-UNL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Add Items" id="NSx-CI-8Ym"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -282,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-OB-bZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840" y="681"/>
+            <point key="canvasLocation" x="1622" y="681"/>
         </scene>
         <!--Step Three-->
         <scene sceneID="phg-OY-oKJ">
