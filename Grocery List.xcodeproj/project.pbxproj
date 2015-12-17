@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F27C2C61C20B94400CBD017 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2BC1C20B94400CBD017 /* OpenSans-Bold.ttf */; };
+		8F27C2C71C20B94400CBD017 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2BD1C20B94400CBD017 /* OpenSans-BoldItalic.ttf */; };
+		8F27C2C81C20B94400CBD017 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2BE1C20B94400CBD017 /* OpenSans-ExtraBold.ttf */; };
+		8F27C2C91C20B94400CBD017 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2BF1C20B94400CBD017 /* OpenSans-ExtraBoldItalic.ttf */; };
+		8F27C2CA1C20B94400CBD017 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C01C20B94400CBD017 /* OpenSans-Italic.ttf */; };
+		8F27C2CB1C20B94400CBD017 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C11C20B94400CBD017 /* OpenSans-Light.ttf */; };
+		8F27C2CC1C20B94400CBD017 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C21C20B94400CBD017 /* OpenSans-LightItalic.ttf */; };
+		8F27C2CD1C20B94400CBD017 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C31C20B94400CBD017 /* OpenSans-Regular.ttf */; };
+		8F27C2CE1C20B94400CBD017 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C41C20B94400CBD017 /* OpenSans-Semibold.ttf */; };
+		8F27C2CF1C20B94400CBD017 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F27C2C51C20B94400CBD017 /* OpenSans-SemiboldItalic.ttf */; };
 		FF39817A1C049AA300AF0678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3981791C049AA300AF0678 /* AppDelegate.swift */; };
 		FF39817F1C049AA300AF0678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF39817D1C049AA300AF0678 /* Main.storyboard */; };
 		FF3981821C049AA300AF0678 /* Grocery_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF3981801C049AA300AF0678 /* Grocery_List.xcdatamodeld */; };
@@ -17,7 +27,6 @@
 		FF3981AD1C04A5F300AF0678 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3981AC1C04A5F300AF0678 /* ListTableViewController.swift */; };
 		FF3981AF1C04A74500AF0678 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3981AE1C04A74500AF0678 /* CoreData.framework */; };
 		FF3981B11C04A9A700AF0678 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3981B01C04A9A700AF0678 /* ImportViewController.swift */; };
-		FF3981B31C04A9D800AF0678 /* BBBounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3981B21C04A9D800AF0678 /* BBBounceButton.swift */; };
 		FF46897C1C11F722008539BC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46897B1C11F722008539BC /* OnboardingPageViewController.swift */; };
 		FF46897E1C11F7A5008539BC /* StepOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46897D1C11F7A5008539BC /* StepOne.swift */; };
 		FF4689801C11F7C9008539BC /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46897F1C11F7C9008539BC /* StepTwo.swift */; };
@@ -43,6 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F27C2BC1C20B94400CBD017 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		8F27C2BD1C20B94400CBD017 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8F27C2BE1C20B94400CBD017 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8F27C2BF1C20B94400CBD017 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8F27C2C01C20B94400CBD017 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		8F27C2C11C20B94400CBD017 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		8F27C2C21C20B94400CBD017 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		8F27C2C31C20B94400CBD017 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		8F27C2C41C20B94400CBD017 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		8F27C2C51C20B94400CBD017 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		FF3981761C049AA300AF0678 /* Grocery List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3981791C049AA300AF0678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF39817E1C049AA300AF0678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +78,6 @@
 		FF3981AC1C04A5F300AF0678 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		FF3981AE1C04A74500AF0678 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FF3981B01C04A9A700AF0678 /* ImportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
-		FF3981B21C04A9D800AF0678 /* BBBounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BBBounceButton.swift; path = ../BBBounceButton.swift; sourceTree = "<group>"; };
 		FF46897B1C11F722008539BC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingPageViewController.swift; path = ../OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		FF46897D1C11F7A5008539BC /* StepOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepOne.swift; sourceTree = "<group>"; };
 		FF46897F1C11F7C9008539BC /* StepTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
@@ -93,10 +111,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F27C2D01C20B94A00CBD017 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				8F27C2BC1C20B94400CBD017 /* OpenSans-Bold.ttf */,
+				8F27C2BD1C20B94400CBD017 /* OpenSans-BoldItalic.ttf */,
+				8F27C2BE1C20B94400CBD017 /* OpenSans-ExtraBold.ttf */,
+				8F27C2BF1C20B94400CBD017 /* OpenSans-ExtraBoldItalic.ttf */,
+				8F27C2C01C20B94400CBD017 /* OpenSans-Italic.ttf */,
+				8F27C2C11C20B94400CBD017 /* OpenSans-Light.ttf */,
+				8F27C2C21C20B94400CBD017 /* OpenSans-LightItalic.ttf */,
+				8F27C2C31C20B94400CBD017 /* OpenSans-Regular.ttf */,
+				8F27C2C41C20B94400CBD017 /* OpenSans-Semibold.ttf */,
+				8F27C2C51C20B94400CBD017 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = OpenSans;
+			sourceTree = "<group>";
+		};
 		FF39816D1C049AA300AF0678 = {
 			isa = PBXGroup;
 			children = (
-				FF3981AE1C04A74500AF0678 /* CoreData.framework */,
 				FF3981781C049AA300AF0678 /* Grocery List */,
 				FF3981901C049AA300AF0678 /* Grocery ListTests */,
 				FF39819B1C049AA300AF0678 /* Grocery ListUITests */,
@@ -119,7 +153,6 @@
 			children = (
 				FF3981791C049AA300AF0678 /* AppDelegate.swift */,
 				FF4689851C11FE84008539BC /* Onboarding */,
-				FF3981B21C04A9D800AF0678 /* BBBounceButton.swift */,
 				FF39817D1C049AA300AF0678 /* Main.storyboard */,
 				FF3981B01C04A9A700AF0678 /* ImportViewController.swift */,
 				FF3981AC1C04A5F300AF0678 /* ListTableViewController.swift */,
@@ -127,6 +160,7 @@
 				FF3981851C049AA300AF0678 /* LaunchScreen.storyboard */,
 				FF3981881C049AA300AF0678 /* Info.plist */,
 				FF3981801C049AA300AF0678 /* Grocery_List.xcdatamodeld */,
+				FF3981AE1C04A74500AF0678 /* CoreData.framework */,
 			);
 			path = "Grocery List";
 			sourceTree = "<group>";
@@ -152,6 +186,7 @@
 		FF4689851C11FE84008539BC /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				8F27C2D01C20B94A00CBD017 /* OpenSans */,
 				FF46897B1C11F722008539BC /* OnboardingPageViewController.swift */,
 				FF4689811C11F7D6008539BC /* StepZero.swift */,
 				FF46897D1C11F7A5008539BC /* StepOne.swift */,
@@ -266,9 +301,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F27C2CE1C20B94400CBD017 /* OpenSans-Semibold.ttf in Resources */,
+				8F27C2CF1C20B94400CBD017 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				FF3981871C049AA300AF0678 /* LaunchScreen.storyboard in Resources */,
+				8F27C2CD1C20B94400CBD017 /* OpenSans-Regular.ttf in Resources */,
+				8F27C2CA1C20B94400CBD017 /* OpenSans-Italic.ttf in Resources */,
+				8F27C2C91C20B94400CBD017 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				FF3981841C049AA300AF0678 /* Assets.xcassets in Resources */,
+				8F27C2CC1C20B94400CBD017 /* OpenSans-LightItalic.ttf in Resources */,
+				8F27C2C61C20B94400CBD017 /* OpenSans-Bold.ttf in Resources */,
 				FF39817F1C049AA300AF0678 /* Main.storyboard in Resources */,
+				8F27C2CB1C20B94400CBD017 /* OpenSans-Light.ttf in Resources */,
+				8F27C2C71C20B94400CBD017 /* OpenSans-BoldItalic.ttf in Resources */,
+				8F27C2C81C20B94400CBD017 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +344,6 @@
 				FF4689841C11F7F2008539BC /* StepThree.swift in Sources */,
 				FF3981821C049AA300AF0678 /* Grocery_List.xcdatamodeld in Sources */,
 				FF4689821C11F7D6008539BC /* StepZero.swift in Sources */,
-				FF3981B31C04A9D800AF0678 /* BBBounceButton.swift in Sources */,
 				FF46897C1C11F722008539BC /* OnboardingPageViewController.swift in Sources */,
 				FF46897E1C11F7A5008539BC /* StepOne.swift in Sources */,
 				FF3981B11C04A9A700AF0678 /* ImportViewController.swift in Sources */,

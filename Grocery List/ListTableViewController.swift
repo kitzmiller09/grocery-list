@@ -158,23 +158,34 @@ class ListTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         cell.tintColor = UIColor.whiteColor()   //Used to set the color of accesories
         
-        cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)   //Set text font-family
+        let font = UIFont(name: "OpenSans", size: 17.0)
+            for FontName in UIFont.fontNamesForFamilyName("OpenSans"){
+                print(FontName)
+                print("-")
+            }
+        
+        //cell.textLabel!.font = UIFont(name: "Boysen-Regular", size: 17.0)   //Set text font-family
+        cell.textLabel!.font = font
         cell.textLabel!.text = groceryItem.valueForKey("name") as? String
         
         //Set color and accesory type of cells based on "complete"
         if (groceryItem.valueForKey("complete") as! Bool){
             cell.accessoryType = .Checkmark
-            cell.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
-            cell.textLabel?.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
+            
+            let blueColor = UIColor(red: 84/255, green: 150/255, blue: 146/255, alpha: 1.0)
+            cell.backgroundColor = blueColor
+            cell.textLabel?.backgroundColor = blueColor
             cell.textLabel?.textColor = UIColor.whiteColor()
-            cell.contentView.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
+            cell.contentView.backgroundColor = blueColor
             
         } else {
             cell.accessoryType = .None; //Removes accessory
-            cell.backgroundColor = UIColor.whiteColor()
-            cell.textLabel?.backgroundColor = UIColor.whiteColor()
-            cell.textLabel?.textColor = UIColor.blackColor()
-            cell.contentView.backgroundColor = UIColor.whiteColor()
+            let bgColor = UIColor.clearColor()
+            
+            cell.backgroundColor = bgColor
+            cell.textLabel?.backgroundColor = bgColor
+            cell.textLabel?.textColor = UIColor(red: 37/255, green: 62/255, blue: 109/255, alpha: 1.0)
+            cell.contentView.backgroundColor = bgColor
         }
         
         
@@ -225,9 +236,12 @@ class ListTableViewController: UIViewController, UITableViewDataSource, UITableV
                     item = results as! [NSManagedObject]
                     item[0].setValue(false, forKey: "complete")     //Item's "complete" core data attribute changed to false
                     cell.accessoryType = .None; //Removes accessory
-                    cell.backgroundColor = UIColor.whiteColor() //Change Color
-                    cell.contentView.backgroundColor = UIColor.whiteColor()
-                    cell.textLabel?.textColor = UIColor.blackColor()
+                    
+                    let bgColor = UIColor.clearColor()
+                    
+                    cell.backgroundColor = bgColor
+                    cell.contentView.backgroundColor = bgColor
+                    cell.textLabel?.textColor = UIColor(red: 37/255, green: 62/255, blue: 109/255, alpha: 1.0)
                 } catch let error as NSError {
                     print("Could not fetch \(error), \(error.userInfo)")
                 }
@@ -260,10 +274,11 @@ class ListTableViewController: UIViewController, UITableViewDataSource, UITableV
                     item = results as! [NSManagedObject]
                     item[0].setValue(true, forKey: "complete")  //Item's "complete" core data attribute set to true
                     cell.accessoryType = .Checkmark;    //Adds checkmark accessory
-                    //change color
-                    cell.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
-                    cell.textLabel?.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
-                    cell.contentView.backgroundColor = UIColor(red: 9/255, green: 73/255, blue: 118/255, alpha: 1.0) /* #094976 */
+                    //change color to blue
+                    let blueColor = UIColor(red: 84/255, green: 150/255, blue: 146/255, alpha: 1.0)
+                    cell.backgroundColor = blueColor
+                    cell.textLabel?.backgroundColor = blueColor
+                    cell.contentView.backgroundColor = blueColor
                     cell.textLabel?.textColor = UIColor.whiteColor()
                     
                 } catch let error as NSError {

@@ -30,10 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstLaunch")
         }
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 15/255, green: 117/255, blue: 188/255, alpha: 1.0) /* #1bbc9b */
+        UINavigationBar.appearance().barTintColor = UIColor(red: 96/255, green: 172/255, blue: 167/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
-        if let barFont = UIFont(name: "Avenir", size: 22.0){
+        if let barFont = UIFont(name: "OpenSans", size: 22.0){
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: barFont]
         }
         
