@@ -58,6 +58,7 @@ class ImportViewController: UIViewController {
         notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillShowNotification, object: nil)
         notificationCenter.addObserver(self, selector: "handleKeyboardHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
         
+        pasteField.becomeFirstResponder()
     }
     
     func handleKeyboardNotification(notification: NSNotification){
